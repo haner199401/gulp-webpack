@@ -68,7 +68,7 @@ gulp.task('webpack', function() {
 });
 
 /**
- * webpack 打包
+ * stylus 编译
  */
 gulp.task('css', function() {
     return gulp.src(globs.css)
