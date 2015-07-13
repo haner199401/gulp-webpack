@@ -28,6 +28,7 @@ module.exports = {
     entry: getEntry(),
     resolve: {
         root: [path.join(__dirname, "bower_components")],
+        //设置 webpack 扫包目录
         modulesDirectories: [
             'node_modules',
             'bower_components'
@@ -35,6 +36,7 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin(),
+        //解析 bower 依赖包路径
         new webpack.ResolverPlugin(
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
         )
