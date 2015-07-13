@@ -2,7 +2,7 @@
 记录一下webpack，
 刚刚开始 学习前端，各种姿势，好刺激。
 
-> * git clone
+> * git clone *****
 > * npm install && bower install
 > * gulp
 
